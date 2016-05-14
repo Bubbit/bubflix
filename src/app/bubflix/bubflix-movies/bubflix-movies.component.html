@@ -1,3 +1,12 @@
+<form #movieSearchForm="ngForm" (ngSubmit)="searchForMovie(movieSearchForm.value)" >
+<div class="form-group">
+  <label for="name">Movie Title</label>
+  <input type="text" class="form-control" required
+    ngControl="movieTitle" >
+</div>
+<button type="submit" class="btn btn-default">Search</button>
+</form>
+
 <div *ngFor="let movie of movieList">
-    {{movie.Title}}
+    <movie-card [movie]="movie"></movie-card>
 </div>  

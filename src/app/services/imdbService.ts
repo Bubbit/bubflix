@@ -13,4 +13,9 @@ export class ImdbService {
     return this.http.get('http://localhost:4000/imdb')
     .map(response => response.json());
   }
+  
+  search(title) {
+    return this.http.get('http://localhost:4000/imdb/search?s=' + title)
+    .map(response => response.json());
+  }
 }
