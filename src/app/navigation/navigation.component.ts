@@ -25,7 +25,7 @@ import {RouterLink} from '@angular/router-deprecated';
                     </div>
                 </div>
             </nav>
-        `
+        `,
     styleUrls:  ['src/app/navigation/navigation.component.css']
 })
 

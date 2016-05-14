@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
+import {ImdbService} from '../../services/imdbService';
 
 @Component({
-    templateUrl: 'src/app/bubflix/bubflix-movies/bubflix-movies.component.html'
+  providers: [ImdbService],
+  templateUrl: 'src/app/bubflix/bubflix-movies/bubflix-movies.component.html'
 })
 
 export class BubflixMoviesComponent {
  private movieList;
-  constructor() {
-    this.movieList = [{"title": "Rockt"}];
+  constructor(movies: ImdbService) {
+    movies.get().subscribe(data => this.movieList = data.movies);
   }
 }
