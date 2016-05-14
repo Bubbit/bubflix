@@ -1,38 +1,38 @@
 {
-  "name": "angular2-tutorial",
+  "name": "angular2-bubflix",
   "version": "1.0.0",
-  "description": "tutorial application build with angular2 for test purposes",
+  "description": "Media Center application build with angular2 for test purposes and home use",
   "main": "index.html",
   "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "dependencies": {
-    "angular2": "2.0.0-beta.3",
-    "systemjs": "0.19.6",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.33.3",
+    "angular2": "2.0.0-beta.14",
+    "systemjs": "0.19.25",
+    "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.11"
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.6",
-    "concurrently": "^1.0.0",
-    "jasmine-core": "2.4.1",
-    "lite-server": "^2.0.1",
-    "typescript": "^1.7.5"
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.9",
+    "typings":"^0.7.12"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bubbit/angular2-tutorial.git"
+    "url": "git+https://github.com/Bubbit/angular2-fitness.git"
   },
   "author": "Remco Gubbels",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bubbit/angular2-tutorial/issues"
+    "url": "https://github.com/Bubbit/angular2-fitness/issues"
   },
-  "homepage": "https://github.com/Bubbit/angular2-tutorial#readme"
+  "homepage": "https://github.com/Bubbit/angular2-fitness#readme"
 }
