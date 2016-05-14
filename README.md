@@ -1,2 +1,2 @@
-# angular2-test-project
-Test project to start working with angular2
+# Bubflix
+Media Center application build with angular2 for test purposes and home use

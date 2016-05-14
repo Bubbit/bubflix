@@ -27,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bubbit/angular2-fitness.git"
+    "url": "git+https://github.com/Bubbit/bubflix"
   },
   "author": "Remco Gubbels",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bubbit/angular2-fitness/issues"
+    "url": "https://github.com/Bubbit/bubflix/issues"
   },
-  "homepage": "https://github.com/Bubbit/angular2-fitness#readme"
+  "homepage": "https://github.com/Bubbit/bubflix#readme"
 }
